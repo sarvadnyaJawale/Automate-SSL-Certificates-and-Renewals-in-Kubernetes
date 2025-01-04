@@ -40,13 +40,11 @@ Before setting up, ensure the following:
 ### Installation
 **1. Install cert-manager:**
 Apply the cert-manager manifests:
-'''bash
-kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.12.2/cert-manager.yaml
+'''bash kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.12.2/cert-manager.yaml
 
 **2. Configure a ClusterIssuer:**
 Create a ClusterIssuer to use Let’s Encrypt for certificate issuance:
-'''yaml
-apiVersion: cert-manager.io/v1
+'''yaml apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:
   name: letsencrypt-production
